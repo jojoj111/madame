@@ -33,9 +33,15 @@
 
     h2 {
       color: var(--text-color);
-      font-weight: 1000;
+      font-weight: 500;
       margin-bottom: 1.8rem;
     }
+body {
+  background-image: url('index.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
     button {
       background-color: var(--pink-accent);
@@ -71,6 +77,7 @@
 
     function nextQuestion() {
       card.innerHTML = `
+      <img src="index.jpg" alt="Description of image">
         <h2>Nananakit ba ang iyong kasukasuan?</h2>
         <button onclick="goodAnswer()"> Oo huhuhu</button>
         <button onclick="sunshineStart()"> Hindi naman</button>
